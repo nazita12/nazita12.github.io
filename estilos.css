@@ -1,0 +1,521 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90% ;
+    max-width: 1000px;
+    margin: auto ;
+    overflow: hidden;
+}
+
+.titulo{
+    color: rgb(235, 120, 39);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background:  #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b633, #fc4b1a93);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4b1a9b), url(imagenes/img/GeneticGYM\ \(@genetic.gym\)\ _\ Instagram\ -\ Brave\ 11_6_2023\ 13_34_43.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+
+}
+nav > a{
+    color: #0a0909 ;
+    font-weight: 700 ;
+    text-decoration: none ;
+    margin-right: 10px;
+
+}
+
+nav > a:hover{
+   
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center ;
+}
+
+.textos-header h1{
+    font-size: 60px;
+    color: #060606;
+}
+.textos-header h2{
+    font-size: 60px;
+    font-weight: 600;
+    color: #0a0a0a;
+
+}
+
+
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+/* About us */
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagen-about-us{
+    width: 60%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 40%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 20px;
+
+}
+.contenido-textos h3 span{
+    background: #dd6f09;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-block ;
+    text-align: center;
+    width: 40px ;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0, .5);
+    margin-right: 5px;
+   
+}
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 500;
+    text-align: justify;
+}
+ /* galeria */
+
+ .portafolio{
+    background: #b9b5b5;
+
+ }
+
+ .galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+ }
+
+ .imagen-port{
+    width: 50%;
+    margin-bottom: 10px;
+    
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0,0,0, .5);
+
+ }
+
+ .imagen-port > img{
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+    display: block;
+ } 
+
+ .hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(36, 93%, 47%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+ }
+ 
+ .hover-galeria img{
+    width: 50px;
+
+ }
+ .hover-galeria p{
+    color: #ffffff;
+ }
+
+ .imagen-port:hover .hover-galeria{
+    transform: scale(1);
+ }
+
+ /* servicios */
+
+ .servicios{
+    background: #f2f2f2;
+    padding-bottom: 30px ;
+ }
+
+ .servicio-cont{
+    display: flex;
+    justify-content: space-between ;
+    align-items:  center;
+ }
+ 
+ .servicio-ind{
+    width: 28%;
+    text-align: center;
+ }
+
+ .servicio-ind img{
+    width: 90%;
+ }
+
+ .servicio-ind h3{
+    margin: 10px 0;
+ }
+
+ .servicio-ind p{
+   font-weight: 300;
+   text-align: justify;
+ }
+
+ /* footer */
+
+ footer{
+    background: #6d6a6a ;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+
+ }
+
+ .contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+ }
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #ffffff;
+    border-bottom: 3px solid #fc4a1a;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo p{
+    color: #d2c1c1;
+    
+}
+
+.enlaceitg{
+    color: #bdb6b6;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0 ;
+    color: #a69e9e;
+}
+
+
+/* Ubicacion */
+
+.mapa{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+/* A cerca de */
+.nosotros-titulo{
+    text-align: center;
+    font-size: 100px;
+    margin: 200px 20px 50px 50px ;
+    color: #070606;
+
+}
+.acerca-de{
+    text-align: center;
+    font-size: 150%;
+    margin: 0px 0px 0px 0px ;
+    color: #0c0c0b;
+    
+}
+
+.nosotros-sub{
+    text-align: center;
+    font-size: 100px;
+    margin: 20px 0px 50px 50px ;
+    color: #070606;
+
+}
+.acerca-de-nosotros{
+    background: #c4c0c0;
+}
+
+
+/* Contacto */
+
+*{
+    box-sizing: border-box;
+}
+.contacto-formulario{
+    background: #bd6110;
+    color: #f2f2f2;
+    font-family:"Quicksand", sans-serif;
+    padding: 0 1.5em;
+    
+}
+
+.contenedor-cont{
+    max-width: 1170px;
+    margin-left: auto ;
+    margin-right:auto ;
+    padding: 1.5em;
+}
+
+.logo{
+    text-align: center;
+    font-size: 3em;
+    color: #dd6f09;
+} 
+.contacto-formulario{
+box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+
+}
+.contacto-formulario{
+    padding: 1em;
+}
+
+.contac-forma{
+    background: #222;
+}
+
+
+.contac-forma form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contac-forma form.block{
+   grid-column: 1 / 3;
+
+}
+.contac-forma form p{
+margin: 0;
+padding: 1em;
+}
+
+
+
+.contac-forma form button,
+.contac-forma form input,
+.contac-forma form textarea {
+    width: 100%;
+    padding: .7em;
+    border:  none;
+    background: none;
+    border-bottom: 1px solid #d57b1a;
+    outline: 0;
+    color: #f2f2f2;
+}
+
+.contac-forma form button{
+    background:  #d63031 ;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+
+}
+.contac-forma form button:hover,
+.contac-forma form button:focus {
+background: #dd6f09;
+color: #0a0909;
+transition: background-color 1s ease-out;
+outline: 0;
+}
+
+
+.contac-info{
+    background: #0a0a0a;
+}
+.contac-info h4,
+.contac-info ul,
+.contac-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.contac-info ul{
+    list-style: none;
+    padding: 0;
+}
+.contac-info ul li{
+padding: .5em;
+}
+
+
+/* LARGE SCREEN*/
+
+@media (min-width: 700px){
+    body{
+        padding: 0 4rem;
+    }
+
+    .contacto-formulario > * {
+        padding: 2em;
+        }
+
+    .contac-info h4,
+    .contac-info ul,
+    .contac-info p {
+        padding: 1em;
+    }    
+
+} 
+
+/* PORTAFOLIOS */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.galeria{
+    padding: 16px;
+}
+
+.imagen-principal img{
+    width: 100%;
+    height: 1200px;
+    object-fit: cover;
+    display: block;
+}
+
+.lista-imagenes img{
+    width: 100%;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    margin-right: 10px;
+    display: block;
+}
+
+.lista-imagenes {
+    display: flex;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+/* PROMOCIONES*/
+
+
+.contenedor-promo{
+    
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 0vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.tabla{
+    width: 33%;
+    height: 400px;
+    margin: auto;
+    border: 1px solid #343759;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px #343759;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: #343759;
+}
+.tabla>h2{
+    
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.tabla img{
+    width: 80px;
+    margin-bottom: 50px;
+
+}
+
+.tabla > p{
+    display: block;
+    margin-bottom: 50px;
+    color: #060606;
+
+}
+.tabla:hover{
+    background: #e4860c;
+    color: #f1f1f2;
+    transition: 0.2 all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    .tabla{
+        width: 85%;
+        padding: 20px;
+    }
+}
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
